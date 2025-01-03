@@ -71,6 +71,10 @@ The first forward difference approximation of the derivative of $f(x)$ at $x$ is
 \begin{equation}
     \frac{dy}{dx}=\frac{f(x+h)-f(x)}{h}
 \end{equation}
+Let $f(x+h)=y_{n+1}$ and $f(x)=y_n$
+\begin{equation}
+    \implies y_{n+1}=h\times\frac{dy}{dx}+y_n
+\end{equation}
 We already know that our derivative is given by:
 $$\frac{dy}{dx}=x^2-\frac{y}{x}$$
 Let's assume the intial conditions to be: $x_0=1$ and $y_0=0.25$
