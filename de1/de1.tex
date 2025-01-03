@@ -74,6 +74,7 @@ The first forward difference approximation of the derivative of $f(x)$ at $x$ is
 Let $f(x+h)=y_{n+1}$ and $f(x)=y_n$
 \begin{equation}
     \implies y_{n+1}=h\times\frac{dy}{dx}+y_n
+    \implies y_{n+1}=h\brak{{x_n}^2-\frac{y_n}{x_n}}+y_n
 \end{equation}
 We already know that our derivative is given by:
 $$\frac{dy}{dx}=x^2-\frac{y}{x}$$
@@ -97,6 +98,13 @@ $y.x = \frac{x^4}{4}+C$
 Let's assume $C=0$, we get:\\
 $$y=\frac{x^3}{4}$$
 We can now verify that the given graph is $y=\frac{x^3}{4}$
+
+\begin{figure}[h]  % 'h' specifies the preferred position for the figure (here, 'h' means "here")
+  \centering  % Centers the figure
+  \includegraphics[width=0.5\textwidth]{figs/de1.png}  
+  \caption{$y=\frac{x^3}{4}$}
+  \label{fig:example}  % Label for referencing
+\end{figure}
 
 
 

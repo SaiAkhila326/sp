@@ -30,7 +30,20 @@ x_array = np.ctypeslib.as_array(x)
 y_array = np.ctypeslib.as_array(y)
 
 # Plot the points using matplotlib
-plt.scatter(x_array, y_array, label='Data points')
+plt.scatter(x_array, y_array, label='Data points obtained from finite differences method',color='yellow')
+# Plotting the actual curve for verification
+
+# Defining the range of x values and the function y = x^3 / 4
+x = np.linspace(0, 2000, 50000)
+y = x**3 / 4
+
+# Plotting the curve
+plt.plot(x, y, label=r"$y = \frac{x^3}{4}$(Theoretical graph)", color="red")
+
+# Adding a legend to distinguish this curve
+plt.legend(fontsize=12)
+
+
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Finite Difference Method: Numerical Solution')
