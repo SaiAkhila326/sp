@@ -30,7 +30,7 @@ x_array = np.ctypeslib.as_array(x)
 y_array = np.ctypeslib.as_array(y)
 
 # Plot the points using matplotlib
-plt.scatter(x_array, y_array, label='Data points obtained from finite differences method',color='yellow')
+plt.scatter(x_array, y_array, label='Simulation graph',color='yellow')
 # Plotting the actual curve for verification
 
 # Defining the range of x values and the function y = x^3 / 4
