@@ -38,12 +38,10 @@ x = np.linspace(0, 2000, 50000)
 y = x**3 / 4
 
 # Plotting the curve
-plt.plot(x, y, label=r"$y = \frac{x^3}{4}$(Theoretical graph)", color="red")
+plt.plot(x, y, label=r"Theory curve", color="red")
 
 # Adding a legend to distinguish this curve
 plt.legend(fontsize=12)
-
-
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title('Finite Difference Method: Numerical Solution')
